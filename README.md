@@ -8,7 +8,7 @@
 ### Python - 3 and above
 ### Django and DRF
 ### postgresql
-## installation:
+## Installation:
 ```python
 pip install -r requirements.txt
 
