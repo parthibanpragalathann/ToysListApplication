@@ -14,7 +14,7 @@ pip install -r requirements.txt
 
 ```
 
-##Database migration
+## Database migration
 ```python
 python manage.py makemigrations
 
