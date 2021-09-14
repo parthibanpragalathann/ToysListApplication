@@ -11,7 +11,7 @@ class CreateViewToys(APIView):
     serializer_class = ToysSerializer
 
     def get(self, request, *args, **kwargs):
-        toys_info = ToysList.objects.all()
+        toys_info = ToysList.objects.order_by('name')
         serializer = ToysSerializer(toys_info, many=True)
         print(serializer.data)
         return Response(serializer.data)
